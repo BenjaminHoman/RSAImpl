@@ -41,6 +41,6 @@ def generatePrimeCandidate(length):
 
 def generatePrimeNumber(length=1024):
     p = 4
-    while not is_prime(p, 128):
-        p = generate_prime_candidate(length)
+    while not isPrime(p, 128):
+        p = generatePrimeCandidate(length)
     return p
